@@ -35,8 +35,8 @@ setInterval(() => {
     const current_url = document.location.href;
 
     // DEBUG INFO
-    console.logger("Language Watch:", previous_language, current_language);
-    console.logger("URL Watch:", previous_url, current_url);
+    //console.logger("Language Watch:", previous_language, current_language);
+    //console.logger("URL Watch:", previous_url, current_url);
 
     // if the language changed, we know we just loaded the home page
     if (previous_language !== current_language || previous_url !== current_url) {
@@ -125,7 +125,7 @@ const inject_autolingo = () => {
         
                         // show tooltip when hovering over the auto-lesson buttons
                         let final_autolingo_tooltip_text = document.createElement("SPAN");
-                        final_autolingo_tooltip_text.innerHTML = "Autocomplete <strong>legendary lesson</strong> with AutoLingo.";
+                        final_autolingo_tooltip_text.innerHTML = "Autocomplete <strong>legendary lesson</strong> with Autolingo.";
                         final_autolingo_tooltip_text.className = "tooltip-text";
         
                         // append nodes to eachother
@@ -151,7 +151,7 @@ const inject_autolingo = () => {
     
                     // show tooltip when hovering over the auto-lesson buttons
                     let start_autolingo_tooltip_text = document.createElement("SPAN");
-                    start_autolingo_tooltip_text.innerHTML = "Autocomplete <strong>lesson</strong> with AutoLingo.";
+                    start_autolingo_tooltip_text.innerHTML = "Autocomplete <strong>lesson</strong> with Autolingo.";
                     start_autolingo_tooltip_text.className = "tooltip-text";
     
                     // append nodes to eachother
@@ -197,7 +197,7 @@ const inject_autolingo = () => {
 
                 // show tooltip when hovering over the auto-lesson buttons
                 let start_autolingo_checkpoint_tooltip_text = document.createElement("SPAN");
-                start_autolingo_checkpoint_tooltip_text.innerHTML = "Autocomplete <strong>checkpoint</strong> with AutoLingo.";
+                start_autolingo_checkpoint_tooltip_text.innerHTML = "Autocomplete <strong>checkpoint</strong> with Autolingo.";
                 start_autolingo_checkpoint_tooltip_text.className = "tooltip-text";
 
                 // append nodes to eachother
