@@ -24,31 +24,6 @@ export default class DuolingoChallenge extends ReactUtils {
 
         console.logger(this.challenge_node)
 
-        // send info to db
-        // instead of sending everything (which has personal user information)
-        // we're making sure to only send the challenge & skill data
-        if (this.challenge_node && this.skill_node) {
-            const request = new XMLHttpRequest();
-            request.onload = () => {
-                const status = request.status;
-                const text = request.responseText;
-                console.logger("response from autolingo-db:", status, text)
-            }
-            request.open(
-                "POST",
-                "https://autolingo.dev/upload",
-                true, // async
-            );
-            request.setRequestHeader(
-                "Content-Type",
-                "application/json"
-            );
-            request.send(JSON.stringify({
-                "challenge": this.challenge_node,
-                "skill": this.skill_node,
-            }));
-        }
-
         if (this.challenge_node) {
             this.source_language = this.challenge_node.sourceLanguage;
             this.target_language = this.challenge_node.targetLanguage;
