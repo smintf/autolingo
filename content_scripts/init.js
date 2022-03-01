@@ -26,7 +26,7 @@ chrome.storage.local.get(
             // inject our web accessible resource into the page
             // so it can access the properties of web elements that we need.
             // idk why you have to inject it for this but you do
-            injectScript("content_scripts/injected.js")            
+            injectScript("content_scripts/script.js")            
 
             // add a listener that forwards messages to the injected script
             chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {

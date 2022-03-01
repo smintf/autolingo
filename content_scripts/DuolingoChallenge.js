@@ -51,34 +51,28 @@ export default class DuolingoChallenge extends ReactUtils {
             case "translate":
                 this.solve_translate();
                 break;
-            case "assist": // comment dit-on « baba »
-            case "form": // fill in the blank
+            case "assist":
+            case "form":
                 this.solve_form();
                 break;
             case "characterSelect":
                 this.solve_character_select();
                 break;
-            // mark the correct meaning
             case "judge":
                 this.solve_judge();
                 break;
-            // what do you hear?
             case "selectTranscription":
                 this.solve_select_transcription();
                 break;
-            // what sound does this make?
             case "characterIntro":
                 this.solve_select_transcription();
                 break;
-            // which one of these is "_____"?
             case "select":
                 this.solve_select();
                 break;
-            // what do you hear?
             case "selectPronunciation":
                 this.solve_select_transcription();
                 break;
-            // complete the translation
             case "completeReverseTranslation":
                 this.solve_complete_reverse_translation();
                 break;
@@ -92,7 +86,6 @@ export default class DuolingoChallenge extends ReactUtils {
             case "gapFill":
                 this.solve_form();
                 break;
-            // fill in the blanks (in the table)
             case "tapCompleteTable":
                 this.solve_tap_complete_table();
                 break;
@@ -111,20 +104,17 @@ export default class DuolingoChallenge extends ReactUtils {
             case "tapComplete":
                 this.solve_tap_compelete();
                 break;
-            // read and respond
             case "readComprehension":
                 this.solve_form();
                 break;
             case "listenComprehension":
                 this.solve_select_transcription();
                 break;
-            // complete the chat
             case "dialogue":
                 this.click_next();
                 this.click_next();
                 this.solve_select_transcription();
                 break;
-            // speak this sentence
             case "speak":
                 this.skip_speak();
                 break;
