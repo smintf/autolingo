@@ -56,7 +56,7 @@ export default class DuolingoChallenge extends ReactUtils {
                 this.solve_form();
                 break;
             case "characterSelect":
-                this.solve_character_select();
+                this.solve_form();
                 break;
             case "judge":
                 this.solve_judge();
@@ -68,7 +68,7 @@ export default class DuolingoChallenge extends ReactUtils {
                 this.solve_select_transcription();
                 break;
             case "select":
-                this.solve_select();
+                this.solve_form();
                 break;
             case "selectPronunciation":
                 this.solve_select_transcription();
@@ -293,11 +293,6 @@ export default class DuolingoChallenge extends ReactUtils {
         let correct_index = this.challenge_node.correctIndex;
         this.choose_index("[data-test='challenge-choice']", correct_index);
     }
-    
-    solve_character_select = () => {
-        let correct_index = this.challenge_node.correctIndex;
-        this.choose_index("[data-test='challenge-choice']", correct_index);
-    }
 
     solve_judge = () => {
         let correct_index = this.challenge_node.correctIndices[0];
@@ -307,11 +302,6 @@ export default class DuolingoChallenge extends ReactUtils {
     solve_select_transcription = () => {
         let correct_index = this.challenge_node.correctIndex;
         this.choose_index("[data-test='challenge-judge-text']", correct_index);
-    }
-
-    solve_select = () => {
-        let correct_index = this.challenge_node.correctIndex;
-        this.choose_index("[data-test='challenge-choice]", correct_index);
     }
 
     solve_complete_reverse_translation = () => {
