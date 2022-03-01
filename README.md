@@ -46,4 +46,4 @@ Autolingo is an extension that completes Duolingo lessons so you don't have to.
 ### Disclaimer
 
 This is licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0)
-<br>The original [respository](https://github.com/2-X/autolingo) and [download](https://chrome.google.com/webstore/detail/autolingo/jppnahnlneednhaefhbfgpamgbecpfdd) for the extension.
+<br>The original [respository](https://github.com/2-X/autolingo) and [download](https://chrome.google.com/webstore/detail/autolingo/jppnahnlneednhaefhbfgpamgbecpfdd) for Autolingo, made by 2-X/Kris.
