@@ -7,6 +7,7 @@ const DEBUG = true;
 // append an iframe so we can re-enable console.log
 // using its console.logger
 const frame = document.createElement('iframe');
+frame.style.display = 'none';
 document.body.appendChild(frame);
 
 // if DEBUG, re-enable console.log as console.logger
