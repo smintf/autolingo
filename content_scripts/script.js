@@ -11,7 +11,7 @@ frame.style.display = 'none';
 document.body.appendChild(frame);
 
 // if DEBUG, re-enable console.log as console.logger
-const welcome_message = "Welcome to Autolingo!";
+const welcome_message = "Autolingo has successfully loaded!";
 if (DEBUG) {
     console.logger = (...content) => {
         frame.contentWindow.console.log(...content);
@@ -35,8 +35,8 @@ setInterval(() => {
     const current_url = document.location.href;
 
     // DEBUG INFO
-    // console.logger("language watch", previous_language, current_language);
-    // console.logger("url watch", previous_url, current_url);
+    console.logger("Language Watch:", previous_language, current_language);
+    console.logger("URL Watch:", previous_url, current_url);
 
     // if the language changed, we know we just loaded the home page
     if (previous_language !== current_language || previous_url !== current_url) {
@@ -90,7 +90,7 @@ const inject_autolingo = () => {
     
             // iterate over all skills
             let all_skill_nodes = document.querySelectorAll("[data-test='skill']");
-            console.logger("skill nodes:", all_skill_nodes)
+            console.logger("Skill Nodes:", all_skill_nodes)
             all_skill_nodes.forEach(skill_node => {
     
                 // find the name of each skill node
@@ -164,7 +164,7 @@ const inject_autolingo = () => {
 
             // iterate over all checkpoint nodes
             let all_checkpoint_nodes = document.querySelectorAll("[data-test='checkpoint-badge']");
-            console.logger("checkpoint nodes:", all_checkpoint_nodes)
+            console.logger("Checkpoint Nodes:", all_checkpoint_nodes)
             all_checkpoint_nodes.forEach(checkpoint_node => {
                 // get skill metadata
                 const checkpoint_status = new ReactUtils().ReactFiber(checkpoint_node).return.pendingProps.checkpointStatus;
@@ -217,7 +217,7 @@ const inject_autolingo = () => {
 }
 
 const set_hotkeys = () => {
-    console.logger("hotkeys set")
+    console.logger("Hotkeys have been registered")
     document.addEventListener("keydown", e => {
         // CTRL+ENTER to solve and skip the current challenge
         if (e.key === "Enter" && e.ctrlKey) {
