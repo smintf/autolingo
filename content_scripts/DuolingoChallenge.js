@@ -296,7 +296,7 @@ export default class DuolingoChallenge extends ReactUtils {
     
     solve_character_select = () => {
         let correct_index = this.challenge_node.correctIndex;
-        this.choose_index("[data-test='challenge-choice-card']", correct_index);
+        this.choose_index("[data-test='challenge-choice']", correct_index);
     }
 
     solve_judge = () => {
@@ -311,7 +311,7 @@ export default class DuolingoChallenge extends ReactUtils {
 
     solve_select = () => {
         let correct_index = this.challenge_node.correctIndex;
-        this.choose_index("[data-test='challenge-choice-card']", correct_index);
+        this.choose_index("[data-test='challenge-choice]", correct_index);
     }
 
     solve_complete_reverse_translation = () => {
