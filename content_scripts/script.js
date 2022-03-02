@@ -238,8 +238,8 @@ const set_hotkeys = () => {
             document.querySelector("[data-test='player-skip']")?.click();
         }
         
-        // CTRL+A to autocomplete the entire lesson
-        if (e.key === "a" && e.ctrlKey) {
+        // CTRL+Q to autocomplete the entire lesson
+        if (e.key === "q" && e.ctrlKey) {
             let ds = new DuolingoSkill(skill_node);
             ds.start("[data-test='start-button']", false);
         }        
