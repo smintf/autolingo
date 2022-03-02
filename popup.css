@@ -15,7 +15,6 @@ body {
 }
 
 @media (prefers-color-scheme: dark) {
-    /* for inverting the color of the element in dark mode*/
     .dark-mode-invert {
         filter: invert(100%);
     }
