@@ -31,5 +31,9 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: zip the files
-        run: |
-          zip -r AutolingoExtension.zip *
+        run: zip -r AutolingoExtension.zip *
+        
+      - uses: actions/upload-artifact@v2
+        with:
+          name: AutolingoExtension
+          path: ./AutolingoExtension.zip
