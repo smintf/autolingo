@@ -66,7 +66,7 @@ const inject = (extension_id) => {
     document.addEventListener("solve_challenge", () => {
         const challenge = new DuolingoChallenge();
         challenge.solve();
-        challenge.click_next();
+//        challenge.click_next();
     });
 
     // solve the challenge and go to the next challenge

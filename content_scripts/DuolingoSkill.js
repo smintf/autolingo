@@ -57,7 +57,7 @@ export default class DuolingoSkill extends ReactUtils {
             case "SKILL_PRACTICE_SPLASH":
             case "CHECKPOINT_TEST_SPLASH":
             case "FINAL_LEVEL_DUO":
-                // click START PRACTICE
+            // click START PRACTICE
                 this.current_challenge = new DuolingoChallenge();
                 this.current_challenge.click_next();
                 break;
@@ -95,8 +95,6 @@ export default class DuolingoSkill extends ReactUtils {
             case "HARD_MODE_DUO_SLIDING":
                 break;
             // waiting to hit CONTINUE for coach duo's advice
-            // NOTE it's called "DOACH_DUO" but i think it's a typo so i put an extra case
-            // here just in case they fix it
             case "DOACH_DUO":
             case "COACH_DUO":
             case "HARD_MODE_DUO":
