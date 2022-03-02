@@ -237,6 +237,12 @@ const set_hotkeys = () => {
         if (e.key === "s" && e.altKey) {
             document.querySelector("[data-test='player-skip']")?.click();
         }
+        
+        // CTRL+A to autocomplete the entire lesson
+        if (e.key === "a" && e.ctrlKey) {
+            let ds = new DuolingoSkill(skill_node);
+            ds.start("[data-test='start-button']", false);
+        }        
     });
 }
 
