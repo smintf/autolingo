@@ -27,7 +27,7 @@ Autolingo is an extension that completes Duolingo lessons so you don't have to.
 
 ### How to Install?
 
-1. Download the extension from [here](https://nightly.link/smintf/autolingo/workflows/main/main/AutolingoExtension.zip).
+1. Download the extension from [here](https://nightly.link/smintf/autolingo/workflows/main/master/AutolingoExtension.zip).
 3. Open the "Manage Extensions" page on your browser and turn on "Developer Mode"
 4. Drag and drop `AutolingoExtension.zip` into the "Manage Extensions" page.
 
