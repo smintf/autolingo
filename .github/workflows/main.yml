@@ -23,6 +23,14 @@ jobs:
         run: rm TODO.md
         
         
+      - name: Remove .git dir
+        run: rm -r .git
+        
+        
+      - name: Remove .github dir
+        run: rm -r .github
+        
+        
       - uses: actions/upload-artifact@v2
         with:
           name: AutolingoExtension
