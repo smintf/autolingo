@@ -12,11 +12,15 @@
   <a href="https://github.com/smintf/autolingo/blob/main/LICENSE/">
     <img src="https://img.shields.io/badge/license-Apache 2.0-black">
   </a>
-  <a href="https://github.com/smintf/autolingo/">
+  <a href="https://www.chromium.org/Home/">
       <img src="https://img.shields.io/badge/supports-chromium-blue">
   </a>
   <a href="https://github.com/smintf/autolingo/">
       <img src="https://img.shields.io/badge/status-works-success">
+  </a>
+  <a>
+  <a href="https://chrome.google.com/webstore/detail/autolingo/jppnahnlneednhaefhbfgpamgbecpfdd">
+      <img src="https://img.shields.io/chrome-web-store/v/jppnahnlneednhaefhbfgpamgbecpfdd?color=%237B68EE&label=version">
   </a>
 </p>
 
@@ -42,13 +46,6 @@ Autolingo is an extension that completes Duolingo lessons so you don't have to.
 `CTRL+ENTER` to "Solve & Skip"
 <br>`ALT+ENTER` to "Solve"
 <br>`ALT+S` to "Skip without solving"
-
-
-### TODO
-
-1. Make `Select the Matching Pairs` work on all Screen Sizes.
-2. Fix Icon to Autocomplete Lessons not drawing when Languages get switched.
-3. Fix `Alt+Enter` hotkey sometimes solving and skipping questions instead of just solving them.
 
 ### Disclaimer
 
