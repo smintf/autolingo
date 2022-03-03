@@ -18,6 +18,18 @@ jobs:
       - name: Remove README file
         run: rm README.md
 
+
+      - name: Remove TODO file
+        run: rm TODO.md
+        
+        
+      - name: Remove .git directory
+        run: rm .git
+        
+        
+      - name: Remove .github directory
+        run: rm .github
+        
       - uses: actions/upload-artifact@v2
         with:
           name: AutolingoExtension
