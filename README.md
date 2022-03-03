@@ -48,7 +48,7 @@ Autolingo is an extension that completes Duolingo lessons so you don't have to.
 
 1. Make `Select the Matching Pairs` work on all Screen Sizes.
 2. Fix Icon to Autocomplete Lessons not drawing when Languages get switched.
-3. Fix `Alt+Enter` hotkey sometimes solving and skipping questions instead of just skipping them.
+3. Fix `Alt+Enter` hotkey sometimes solving and skipping questions instead of just solving them.
 
 ### Disclaimer
 
