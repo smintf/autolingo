@@ -84,7 +84,6 @@ const render_content = () => {
     document.getElementById("solve-skip-button").onclick = solve_skip_challenge;
 }
 
-// ON LOAD
 document.addEventListener("DOMContentLoaded", () => {
     // load if the extension was enabled from the cache
     chrome.storage.local.get(

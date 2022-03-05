@@ -13,4 +13,4 @@ setInterval(() => {
             set_badge(Boolean(response["autolingo_enabled"]));
         }
     );
-}, 10);
+}, 5);
