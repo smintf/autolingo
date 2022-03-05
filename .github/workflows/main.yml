@@ -1,4 +1,4 @@
-name: nightly.link build artifact 
+name: nightly.link
 
 on:
   push:
