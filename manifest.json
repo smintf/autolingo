@@ -20,11 +20,9 @@
       "48": "images/icon-48.png",
       "60": "images/icon-60.png"
    },
-   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAskxEfRh6i45SVWvnroMJ1CxrBj8rTi7tvh8OhDe8EJFZra9JLVFr6FVQmwQfFU1wmTEtpwnXAyca7pTUBy7MrST4KE7KqzI1j4YExjMGktMoYmTLvCnRjHlV3jyCImxrR3QmfA3h3StFiUM3SpHMZdQToAI9A9M6hYoHSb7XAJ4DKdt01IpeUj2gfttmMaq5OPRoYchd7IInBCLXFEojXfS8a8rQdRPKCpC/715yCdfELvHY8L0tW6FiSWblcFNNafAb38XVxQMjsHPLgqvXP0BodI7L8VJIjhisEZ9c95b82EfPpJiHLgEUi5Q1X3PnyBHts8wzGCPmDbYdBoxegQIDAQAB",
    "manifest_version": 3,
    "name": "Autolingo",
    "permissions": [ "tabs", "storage" ],
-   "update_url": "https://clients2.google.com/service/update2/crx",
    "version": "2022.01.11",
    "web_accessible_resources": [ {
       "matches": [ "\u003Call_urls>" ],
