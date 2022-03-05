@@ -1,7 +1,6 @@
 # TODO
 
-### Bugs
-
+- [ ] Add support for Stories.
 - [ ] Make `Select the Matching Pairs` work on all Screen Sizes.
 - [ ] Fix Icon to Autocomplete Lessons not drawing when Languages get switched.
 - [ ] Fix `Alt+Enter` hotkey sometimes solving and skipping questions instead of just solving them.
