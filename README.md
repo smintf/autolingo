@@ -9,7 +9,7 @@
 <h4 align="center">another duolingo cheat tool</h4>
 
 <p align="center">
-  <a href="https://github.com/smintf/autolingo/blob/main/LICENSE/">
+  <a href="https://github.com/smintf/autolingo/blob/master/LICENSE/">
     <img src="https://img.shields.io/badge/license-Apache 2.0-black">
   </a>
   <a href="https://www.chromium.org/Home/">
