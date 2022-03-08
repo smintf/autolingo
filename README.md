@@ -16,7 +16,7 @@
       <img src="https://img.shields.io/badge/supports-chromium-blue">
   </a>
   <a href="https://github.com/smintf/autolingo/">
-      <img src="https://img.shields.io/badge/status-works-success">
+      <img src="https://img.shields.io/github/workflow/status/smintf/autolingo/nightly.link/master">
   </a>
   <a>
   <a href="https://chrome.google.com/webstore/detail/autolingo/jppnahnlneednhaefhbfgpamgbecpfdd">
