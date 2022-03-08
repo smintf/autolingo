@@ -85,7 +85,7 @@ const inject_autolingo = () => {
         if (stylesheet_loaded && the_extension_id) {
             clearInterval(i);
 
-            const tier_img_url = `${the_extension_id}/images/diamond-league.svg`;
+            const tier_img_url = `${the_extension_id}/images/diamond_league.svg`;
             const legendary_img_url = `${the_extension_id}/images/legendary.svg`;
     
             // iterate over all skills
