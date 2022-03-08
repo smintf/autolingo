@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="https://github.com/smintf/autolingo/"><img src="https://raw.githubusercontent.com/smintf/autolingo/master/images/badge_diamond.svg" width=128 height=128 alt="logo"></a>
+  <a href="https://github.com/smintf/autolingo/"><img src="https://raw.githubusercontent.com/smintf/autolingo/master/images/icon-256.png" width=128 height=128 alt="logo"></a>
   <br>
   Autolingo
   <br>
