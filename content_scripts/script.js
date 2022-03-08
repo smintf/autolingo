@@ -219,24 +219,52 @@ const inject_autolingo = () => {
 const set_hotkeys = () => {
     console.logger("Hotkeys have been registered")
     document.addEventListener("keydown", e => {
-        // CTRL+ENTER to solve and skip the current challenge
+
+        // If platform is Windows
+        if (navigator.userAgentData.platform == "Windows") {            
         if (e.key === "Enter" && e.ctrlKey) {
             const challenge = new DuolingoChallenge();
             challenge.solve();
             challenge.click_next();
         }
-
-        // ALT+ENTER
-        // solve the challenge (but show us the right answer too)
         if (e.key === "Enter" && e.altKey) {
             const challenge = new DuolingoChallenge();
             challenge.solve();
         }
-
-        // ALT+S to skip the current challenge and fail it
         if (e.key === "s" && e.altKey) {
             document.querySelector("[data-test='player-skip']")?.click();
-        }     
+        }
+    }   
+        // If platform is macOS
+        if (navigator.userAgentData.platform == "macOS") {            
+        if (e.key === "Enter" && e.ctrlKey) {
+            const challenge = new DuolingoChallenge();
+            challenge.solve();
+            challenge.click_next();
+        }
+        if (e.key === "Enter" && e.altKey) {
+            const challenge = new DuolingoChallenge();
+            challenge.solve();
+        }
+        if (e.key === "s" && e.altKey) {
+            document.querySelector("[data-test='player-skip']")?.click();
+        }
+    }
+        // If platform is Linux
+        if (navigator.userAgentData.platform == "Linux") { 
+        if (e.key === "Enter" && e.ctrlKey) {
+            const challenge = new DuolingoChallenge();
+            challenge.solve();
+            challenge.click_next();
+        }
+        if (e.key === "Enter" && e.altKey) {
+            const challenge = new DuolingoChallenge();
+            challenge.solve();
+        }
+        if (e.key === "s" && e.altKey) {
+            document.querySelector("[data-test='player-skip']")?.click();
+        }
+    }  
     });
 }
 
