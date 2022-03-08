@@ -237,8 +237,9 @@ const set_hotkeys = () => {
     }   
         // If platform is macOS
         if (navigator.userAgentData.platform == "macOS") {            
+//        if (e.key === "Enter" && e.ctrlKey || e.metaKey) {
         if (e.key === "Enter" && e.ctrlKey) {
-            const challenge = new DuolingoChallenge();
+        const challenge = new DuolingoChallenge();
             challenge.solve();
             challenge.click_next();
         }
