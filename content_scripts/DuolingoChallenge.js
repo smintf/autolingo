@@ -257,7 +257,7 @@ export default class DuolingoChallenge extends ReactUtils {
         // build a map from the text content to the node
         let tap_tokens = {};
         Array.from(tap_token_nodes).forEach(tap_token_node => {
-            let content = tap_token_node.childNodes[0].textContent;
+            let content = tap_token_node.childNodes[1].textContent;
             tap_tokens[content] = tap_token_node;
         })
 
@@ -278,7 +278,7 @@ export default class DuolingoChallenge extends ReactUtils {
         // build a map from the text content to the node
         let tap_tokens = {};
         Array.from(tap_token_nodes).forEach(tap_token_node => {
-            let content = tap_token_node.childNodes[0].textContent;
+            let content = tap_token_node.childNodes[1].textContent;
             tap_tokens[content] = tap_token_node;
         })
 

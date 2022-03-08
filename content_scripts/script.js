@@ -236,13 +236,7 @@ const set_hotkeys = () => {
         // ALT+S to skip the current challenge and fail it
         if (e.key === "s" && e.altKey) {
             document.querySelector("[data-test='player-skip']")?.click();
-        }
-        
-        // CTRL+Q to autocomplete the entire lesson
-        if (e.key === "q" && e.ctrlKey) {
-            let ds = new DuolingoSkill(skill_node);
-            ds.start("[data-test='start-button']", false);
-        }        
+        }     
     });
 }
 

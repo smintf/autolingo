@@ -23,7 +23,7 @@
    "manifest_version": 3,
    "name": "Autolingo",
    "permissions": [ "tabs", "storage" ],
-   "version": "2022.01.11",
+   "version": "2022.03.07",
    "web_accessible_resources": [ {
       "matches": [ "\u003Call_urls>" ],
       "resources": [ "*" ]
