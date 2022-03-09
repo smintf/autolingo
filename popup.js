@@ -28,7 +28,7 @@ const reload_all_duolingo_tabs = () => {
     }, (windows) => {
         windows.forEach((window) => {
             window.tabs.forEach((tab) => {
-                if (tab.url.includes("duolingo.com")) {
+                if (tab.url.includes("https://www.duolingo.com")) {
                     chrome.tabs.reload(tab.id);
                 }
             });
