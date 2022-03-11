@@ -4,8 +4,6 @@ import DuolingoChallenge from "./DuolingoChallenge.js";
 
 const DEBUG = true;
 
-
-
 // append an iframe so we can re-enable console.log
 // using its console.logger
 const frame = document.createElement("iframe");
@@ -21,9 +19,6 @@ if (DEBUG) {
 } else {
   console.logger = () => {};
 }
-
-
-
 
 // print our welcome message regardless
 frame.contentWindow.console.log(welcome_message);
