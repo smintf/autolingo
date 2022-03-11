@@ -4,6 +4,8 @@ import DuolingoChallenge from "./DuolingoChallenge.js";
 
 const DEBUG = true;
 
+
+
 // append an iframe so we can re-enable console.log
 // using its console.logger
 const frame = document.createElement("iframe");
@@ -19,6 +21,9 @@ if (DEBUG) {
 } else {
   console.logger = () => {};
 }
+
+
+
 
 // print our welcome message regardless
 frame.contentWindow.console.log(welcome_message);
@@ -272,7 +277,7 @@ const set_hotkeys = () => {
     }
     // If platform is macOS
     if (navigator.userAgentData.platform == "macOS") {
-      //        if (e.key === "Enter" && e.ctrlKey || e.metaKey) {
+      // if (e.key === "Enter" && e.ctrlKey || e.metaKey) {
       if (e.key === "Enter" && e.ctrlKey) {
         const challenge = new DuolingoChallenge();
         challenge.solve();
