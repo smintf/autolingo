@@ -1,9 +1,7 @@
 .start-autolingo-skill-container {
     position: absolute;
-
     right: -10px;
     top: 0px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,14 +41,11 @@
     text-align: center;
     padding: 5px 0;
     border-radius: 6px;
-
     left: 50px;
     top: -5px;
-
     /* Position the tooltip text - see examples below! */
     position: absolute;
     z-index: 1;
-
     /* don't let hovering over the text keep the text open! */
     pointer-events: none;
 }
