@@ -13,6 +13,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0
+
+      - name: Prettify code
+        uses: creyD/prettier_action@v4.2
+        with:
+          # This part is also where you can pass other options, for example:
+          prettier_options: --write **/*.{js,md}
+          only_changed: True
+
       - uses: actions/checkout@v2
 
       - name: Remove README file
@@ -30,7 +43,7 @@ jobs:
       - name: Remove .github dir
         run: rm -r .github
         
-        
+      
       - uses: actions/upload-artifact@v2
         with:
           name: AutolingoExtension
