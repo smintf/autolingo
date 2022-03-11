@@ -1,8 +1,8 @@
-import DuolingoChallenge from "./DuolingoChallenge.js"
-import ReactUtils from "./ReactUtils.js"
+import DuolingoChallenge from "./DuolingoChallenge.js";
+import ReactUtils from "./ReactUtils.js";
 
-export default class DuolingoStory extends ReactUtils { 
-    constructor() {
-        super();
-    }
+export default class DuolingoStory extends ReactUtils {
+  constructor() {
+    super();
+  }
 }
