@@ -121,9 +121,6 @@ const inject_autolingo = () => {
           if (legendary_level_unlocked) {
             let final_autolingo_skill_tooltip = document.createElement("DIV");
             final_autolingo_skill_tooltip.className = "tooltip";
-
-            // append a lil button to each skill
-            // when clicked, this button starts an auto-lesson
             let final_autolingo_skill = document.createElement("IMG");
             final_autolingo_skill.src = legendary_img_url;
             final_autolingo_skill.className = "final-autolingo-skill";
@@ -205,7 +202,7 @@ const inject_autolingo = () => {
           key_autolingo_skill_tooltip.appendChild(key_autolingo_tooltip_text);
           key_autolingo_skill_tooltip.appendChild(key_autolingo_skill);
           autolingo_skill_container.appendChild(key_autolingo_skill_tooltip);
-          skill_node.appendChild(autolingo_skill_container);
+//          skill_node.appendChild(autolingo_skill_container);
         }
       });
 
