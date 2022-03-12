@@ -181,6 +181,33 @@ const inject_autolingo = () => {
           start_autolingo_skill_tooltip.appendChild(start_autolingo_skill);
           autolingo_skill_container.appendChild(start_autolingo_skill_tooltip);
           skill_node.appendChild(autolingo_skill_container);
+
+          // key elm
+          let key_autolingo_skill_tooltip = document.createElement("DIV");
+          key_autolingo_skill_tooltip.className = "tooltip";
+          let key_autolingo_skill = document.createElement("IMG");
+          key_autolingo_skill.src = tier_img_url;
+          key_autolingo_skill.className = "key-autolingo-skill";
+
+          // on click, start the lesson and let the extension know it's time to autocomplete
+          key_autolingo_skill.onclick = () => {
+            let ds = new DuolingoSkill(skill_node);
+            ds.start("[data-test='test-out-button']", false);
+          };
+
+          // show tooltip when hovering over the auto-lesson buttons
+          let key_autolingo_tooltip_text = document.createElement("SPAN");
+          key_autolingo_tooltip_text.innerHTML =
+            "Autocomplete <strong>jump to level lesson</strong> with Autolingo.";
+          key_autolingo_tooltip_text.className = "tooltip-text";
+
+          // append nodes to eachother
+          key_autolingo_skill_tooltip.appendChild(
+            key_autolingo_tooltip_text
+          );
+          key_autolingo_skill_tooltip.appendChild(key_autolingo_skill);
+          autolingo_skill_container.appendChild(key_autolingo_skill_tooltip);
+          skill_node.appendChild(autolingo_skill_container);
         }
       });
 
