@@ -65,6 +65,7 @@ export default class DuolingoSkill extends ReactUtils {
         break;
       // lil pop-up at the beginning of the practice that you start by clicking
       // the weight icon in the bottom left
+      case "SKILL_TEST_SPLASH":
       case "GLOBAL_PRACTICE_SPLASH":
         this.current_challenge = new DuolingoChallenge();
         this.current_challenge.click_next();

@@ -186,7 +186,7 @@ const inject_autolingo = () => {
           let key_autolingo_skill_tooltip = document.createElement("DIV");
           key_autolingo_skill_tooltip.className = "tooltip";
           let key_autolingo_skill = document.createElement("IMG");
-          key_autolingo_skill.src = tier_img_url;
+          key_autolingo_skill.src = lock_img_url;
           key_autolingo_skill.className = "key-autolingo-skill";
 
           // on click, start the lesson and let the extension know it's time to autocomplete
