@@ -73,7 +73,7 @@ const inject = (extension_id) => {
   document.addEventListener("solve_challenge", () => {
     const challenge = new DuolingoChallenge();
     challenge.solve();
-    //        challenge.click_next();
+//        challenge.click_next();
   });
 
   // solve the challenge and go to the next challenge
@@ -82,7 +82,7 @@ const inject = (extension_id) => {
     const challenge = new DuolingoChallenge();
     challenge.solve();
     challenge.click_next();
-    challenge.click_next();
+//    challenge.click_next();
   });
 };
 
@@ -91,7 +91,8 @@ const inject_autolingo = () => {
   const i = setInterval(() => {
     if (stylesheet_loaded && the_extension_id) {
       clearInterval(i);
-
+      
+      const lock_img_url = `${the_extension_id}/images/locked.svg`;
       const tier_img_url = `${the_extension_id}/images/diamond_league.svg`;
       const legendary_img_url = `${the_extension_id}/images/legendary.svg`;
 
