@@ -195,7 +195,7 @@ const inject_autolingo = () => {
           // show tooltip when hovering over the auto-lesson buttons
           let key_autolingo_tooltip_text = document.createElement("SPAN");
           key_autolingo_tooltip_text.innerHTML =
-            "Autocomplete <strong>jump to level lesson</strong> with Autolingo.";
+            "Autocomplete <strong>jump lesson</strong> with Autolingo.";
           key_autolingo_tooltip_text.className = "tooltip-text";
 
           // append nodes to eachother

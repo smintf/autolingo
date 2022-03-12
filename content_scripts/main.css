@@ -8,7 +8,7 @@
     align-items: center;
 }
 
-.start-autolingo-skill, .final-autolingo-skill {
+.start-autolingo-skill, .final-autolingo-skill, .key-autolingo-skill {
     position: relative;
     height: 40px;
     cursor: pointer;
@@ -16,11 +16,11 @@
 }
 
 
-.start-autolingo-skill:hover, .final-autolingo-skill:hover {
+.start-autolingo-skill:hover, .final-autolingo-skill:hover, .key-autolingo-skill:hover {
     transform: scale(1.2);
 }
 
-.start-autolingo-skill:active, .final-autolingo-skill:active {
+.start-autolingo-skill:active, .final-autolingo-skill:active, .key-autolingo-skill:active {
     transform: scale(1.3);
 }
 
