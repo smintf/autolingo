@@ -202,9 +202,7 @@ const inject_autolingo = () => {
           key_autolingo_tooltip_text.className = "tooltip-text";
 
           // append nodes to eachother
-          key_autolingo_skill_tooltip.appendChild(
-            key_autolingo_tooltip_text
-          );
+          key_autolingo_skill_tooltip.appendChild(key_autolingo_tooltip_text);
           key_autolingo_skill_tooltip.appendChild(key_autolingo_skill);
           autolingo_skill_container.appendChild(key_autolingo_skill_tooltip);
           skill_node.appendChild(autolingo_skill_container);
