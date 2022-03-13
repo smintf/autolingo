@@ -46,6 +46,7 @@ Autolingo is an extension that completes Duolingo lessons so you don't have to.
 `CTRL+ENTER` to "Solve & Skip"
 <br>`ALT+ENTER` to "Solve"
 <br>`ALT+S` to "Skip without solving"
+<br>`ALT+D` to "Autocomplete Lesson"  
 
 ### Disclaimer
 
