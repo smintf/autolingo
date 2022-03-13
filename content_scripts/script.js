@@ -109,8 +109,8 @@ const inject_autolingo = () => {
         // get skill metadata
         const skill_metadata = new ReactUtils().ReactFiber(skill_name_node)
           .return.pendingProps.skill;
-        
-          console.logger("Skill Metadata:", skill_metadata);
+
+        console.logger("Skill Metadata:", skill_metadata);
         // only add these buttons to unlocked lessons
         const unlocked = skill_metadata.accessible;
         const legendary_level_unlocked =
