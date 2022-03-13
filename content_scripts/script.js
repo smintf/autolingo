@@ -110,27 +110,19 @@ const inject_autolingo = () => {
       autolingo_practice.className = "autolingo-practice";
       // on click, final the lesson and let the extension know it's time to autocomplete
       autolingo_practice.onclick = () => {
-          let ds = new DuolingoSkill(skill_node);
-            ds.start(
-                "[data-test='global-practice']",
-                false
-              );
-            };
+        let ds = new DuolingoSkill(skill_node);
+        ds.start("[data-test='global-practice']", false);
+      };
       // show tooltip when hovering over the auto-lesson buttons
       let practice_autolingo_tooltip_text = document.createElement("SPAN");
-            practice_autolingo_tooltip_text.innerHTML =
-              "Autocomplete <strong>practice test</strong> with Autolingo.";
-            practice_autolingo_tooltip_text.className = "tooltip-text";
+      practice_autolingo_tooltip_text.innerHTML =
+        "Autocomplete <strong>practice test</strong> with Autolingo.";
+      practice_autolingo_tooltip_text.className = "tooltip-text";
 
-            // append nodes to eachother
-            autolingo_practice_tooltip.appendChild(
-              practice_autolingo_tooltip_text
-            );
-            practice_autolingo_skill_tooltip.appendChild(autolingo_practice);
-            autolingo_practice_container.appendChild(
-              autolingo_practice_tooltip
-            );
-
+      // append nodes to eachother
+      autolingo_practice_tooltip.appendChild(practice_autolingo_tooltip_text);
+      practice_autolingo_skill_tooltip.appendChild(autolingo_practice);
+      autolingo_practice_container.appendChild(autolingo_practice_tooltip);
 
       // iterate over all skill nodes
       let all_skill_nodes = document.querySelectorAll("[data-test='skill']");
