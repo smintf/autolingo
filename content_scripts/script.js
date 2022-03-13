@@ -123,7 +123,6 @@ const inject_autolingo = () => {
       autolingo_practice_tooltip.appendChild(practice_autolingo_tooltip_text);
       autolingo_practice_tooltip.appendChild(autolingo_practice);
       autolingo_practice_container.appendChild(autolingo_practice_tooltip);
-      practice_node.appendChild(autolingo_practice_container);
 
       // iterate over all skill nodes
       let all_skill_nodes = document.querySelectorAll("[data-test='skill']");
@@ -208,6 +207,7 @@ const inject_autolingo = () => {
           start_autolingo_skill_tooltip.appendChild(start_autolingo_skill);
           autolingo_skill_container.appendChild(start_autolingo_skill_tooltip);
           skill_node.appendChild(autolingo_skill_container);
+          practice_node.appendChild(autolingo_practice_container);
 
           // key elm
           if (legendary_level_unlocked == false) {
