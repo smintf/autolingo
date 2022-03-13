@@ -31,7 +31,7 @@ export default class DuolingoSkill extends ReactUtils {
     setTimeout(() => {
       this.state_machine = setInterval(this.complete_challenge, 10);
     }, 1000);
-  };
+  }
 
   end() {
     clearInterval(this.state_machine);
