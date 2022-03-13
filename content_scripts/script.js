@@ -46,6 +46,7 @@ setInterval(() => {
   // if the language changed, we know we just loaded the home page
   if (previous_language !== current_language || previous_url !== current_url) {
     inject_autolingo();
+    window.location.reload();
     previous_language = current_language;
     previous_url = current_url;
   }
@@ -325,6 +326,10 @@ const set_hotkeys = () => {
       if (e.key === "s" && e.altKey) {
         document.querySelector("[data-test='player-skip']")?.click();
       }
+      if (e.key === "d" && e.altKey) {
+        let ds = new DuolingoSkill();
+        ds.startf();
+      }
     }
     // If platform is macOS
     if (navigator.userAgentData.platform == "macOS") {
@@ -341,6 +346,10 @@ const set_hotkeys = () => {
       if (e.key === "s" && e.altKey) {
         document.querySelector("[data-test='player-skip']")?.click();
       }
+      if (e.key === "d" && e.altKey) {
+        let ds = new DuolingoSkill();
+        ds.startf();
+      }
     }
     // If platform is Linux
     if (navigator.userAgentData.platform == "Linux") {
@@ -355,6 +364,10 @@ const set_hotkeys = () => {
       }
       if (e.key === "s" && e.altKey) {
         document.querySelector("[data-test='player-skip']")?.click();
+      }
+      if (e.key === "d" && e.altKey) {
+        let ds = new DuolingoSkill();
+        ds.startf();
       }
     }
   });
