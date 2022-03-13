@@ -104,7 +104,7 @@ const inject_autolingo = () => {
       autolingo_practice_container.className =
         "start-autolingo-practice-container";
       let autolingo_practice_tooltip = document.createElement("DIV");
-      autolingo_practice_tooltip.className = "tooltip";
+      autolingo_practice_tooltip.className = "tooltip-p";
       let autolingo_practice = document.createElement("IMG");
       autolingo_practice.src = tier_img_url;
       autolingo_practice.className = "autolingo-practice";
@@ -115,9 +115,9 @@ const inject_autolingo = () => {
       };
       // show tooltip when hovering over the auto-lesson buttons
       let practice_autolingo_tooltip_text = document.createElement("SPAN");
-      practice_autolingo_tooltip_text.innerHTML =
-        "Autocomplete <strong>practice test</strong> with Autolingo.";
-      practice_autolingo_tooltip_text.className = "tooltip-text";
+    //  practice_autolingo_tooltip_text.innerHTML =
+    //    "Autocomplete <strong>practice test</strong> with Autolingo.";
+      practice_autolingo_tooltip_text.className = "tooltip-text-p";
 
       // append nodes to eachother
       autolingo_practice_tooltip.appendChild(practice_autolingo_tooltip_text);
