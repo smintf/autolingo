@@ -1,7 +1,6 @@
 import ReactUtils from "./ReactUtils.js";
 import DuolingoSkill from "./DuolingoSkill.js";
 import DuolingoChallenge from "./DuolingoChallenge.js";
-import DuolingoPractice from "./DuolingoPractice.js";
 
 const DEBUG = true;
 
@@ -119,8 +118,8 @@ const inject_autolingo = () => {
       autolingo_practice.className = "autolingo-practice";
       // on click, final the lesson and let the extension know it's time to autocomplete
       autolingo_practice.onclick = () => {
-        let dp = new DuolingoPractice();
-        dp.start();
+        let dp = new DuolingoSkill();
+        dp.startp();
       };
       // show tooltip when hovering over the auto-lesson buttons
       let practice_autolingo_tooltip_text = document.createElement("SPAN");
