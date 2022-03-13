@@ -16,7 +16,9 @@ export default class DuolingoSkill extends ReactUtils {
 
     // for legendary lessons
     if (this.is_final_level) {
-      document.querySelector('[class="_3HhhB _2NolF _275sd _1ZefG _1M1mb _26QYy"]')?.click(); // TODO find something more reliable
+      document
+        .querySelector('[class="_3HhhB _2NolF _275sd _1ZefG _1M1mb _26QYy"]')
+        ?.click(); // TODO find something more reliable
       document.querySelector('[class="WOZnx _275sd _1ZefG KJuUV"]')?.click();
     }
 
@@ -32,7 +34,9 @@ export default class DuolingoSkill extends ReactUtils {
   }
 
   startp() {
-    document.querySelector('[class="WOZnx _275sd _1ZefG _2X5BQ _2TXAc"]')?.click();
+    document
+      .querySelector('[class="WOZnx _275sd _1ZefG _2X5BQ _2TXAc"]')
+      ?.click();
     setTimeout(() => {
       this.state_machine = setInterval(this.complete_challenge, 10);
     }, 1000);
