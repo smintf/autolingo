@@ -32,8 +32,8 @@ Autolingo is an extension that completes Duolingo lessons so you don't have to.
 ### How to Install?
 
 1. Download the extension from [here](https://nightly.link/smintf/autolingo/workflows/main/master/AutolingoExtension.zip).
-3. Open the "Manage Extensions" page on your browser and turn on "Developer Mode"
-4. Drag and drop `AutolingoExtension.zip` into the "Manage Extensions" page.
+2. Open the "Manage Extensions" page on your browser and turn on "Developer Mode"
+3. Drag and drop `AutolingoExtension.zip` into the "Manage Extensions" page.
 
 ### How do i Use This?
 
@@ -46,7 +46,7 @@ Autolingo is an extension that completes Duolingo lessons so you don't have to.
 `CTRL+ENTER` to "Solve & Skip"
 <br>`ALT+ENTER` to "Solve"
 <br>`ALT+S` to "Skip without solving"
-<br>`ALT+D` to "Autocomplete Lesson"  
+<br>`ALT+D` to "Autocomplete Lesson"
 
 ### Disclaimer
 
