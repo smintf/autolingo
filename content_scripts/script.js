@@ -108,29 +108,25 @@ const inject_autolingo = () => {
       let autolingo_practice = document.createElement("IMG");
       autolingo_practice.src = tier_img_url;
       autolingo_practice.className = "autolingo-practice";
-            // on click, final the lesson and let the extension know it's time to autocomplete
-            autolingo_practice.onclick = () => {
-              let ds = new DuolingoSkill(skill_node);
-              ds.start(
-                "[data-test='global-practice']",
-                false
-              );
-            };
-            // show tooltip when hovering over the auto-lesson buttons
-            let practice_autolingo_tooltip_text = document.createElement("SPAN");
-            practice_autolingo_tooltip_text.innerHTML =
-              "Autocomplete <strong>practice test</strong> with Autolingo.";
-            practice_autolingo_tooltip_text.className = "tooltip-text";
+      // on click, final the lesson and let the extension know it's time to autocomplete
+      autolingo_practice.onclick = () => {
+        let ds = new DuolingoSkill(skill_node);
+        ds.start("[data-test='global-practice']", false);
+      };
+      // show tooltip when hovering over the auto-lesson buttons
+      let practice_autolingo_tooltip_text = document.createElement("SPAN");
+      practice_autolingo_tooltip_text.innerHTML =
+        "Autocomplete <strong>practice test</strong> with Autolingo.";
+      practice_autolingo_tooltip_text.className = "tooltip-text";
 
-            // append nodes to eachother
-            practice_autolingo_skill_tooltip.appendChild(
-              practice_autolingo_tooltip_text
-            );
-            practice_autolingo_skill_tooltip.appendChild(practice_autolingo_skill);
-            autolingo_practice_container.appendChild(
-              practice_autolingo_skill_tooltip
-            );
-
+      // append nodes to eachother
+      practice_autolingo_skill_tooltip.appendChild(
+        practice_autolingo_tooltip_text
+      );
+      practice_autolingo_skill_tooltip.appendChild(practice_autolingo_skill);
+      autolingo_practice_container.appendChild(
+        practice_autolingo_skill_tooltip
+      );
 
       // iterate over all skill nodes
       let all_skill_nodes = document.querySelectorAll("[data-test='skill']");
@@ -282,7 +278,7 @@ const inject_autolingo = () => {
           // start state machine
           ds.start(`[data-test='${start_checkpoint_button_selector}']`, false);
         };
-      
+
         // show tooltip when hovering over the auto-lesson buttons
         let start_autolingo_checkpoint_tooltip_text =
           document.createElement("SPAN");
