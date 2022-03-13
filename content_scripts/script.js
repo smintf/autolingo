@@ -110,7 +110,7 @@ const inject_autolingo = () => {
       autolingo_practice.className = "autolingo-practice";
       // on click, final the lesson and let the extension know it's time to autocomplete
       autolingo_practice.onclick = () => {
-        let ds = new DuolingoSkill(skill_node);
+        let ds = new DuolingoSkill(practice_node);
         ds.start("[data-test='global-practice']", false);
       };
       // show tooltip when hovering over the auto-lesson buttons
