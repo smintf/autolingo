@@ -7,7 +7,7 @@ export default class DuolingoPractice extends ReactUtils {
   }
 
   start = () => {
-    document.querySelector(global - practice)?.click();
+    document.querySelector("[data-test='global-practice']").click();
     setTimeout(() => {
       this.state_machine = setInterval(this.complete_challenge, 10);
     }, 1000);
