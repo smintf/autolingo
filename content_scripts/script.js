@@ -326,7 +326,7 @@ const set_hotkeys = () => {
       if (e.key === "s" && e.altKey) {
         document.querySelector("[data-test='player-skip']")?.click();
       }
-      if (e.key === "d" && e.ctrlKey && e.shiftKey) {
+      if (e.key === "d" && e.shiftKey) {
         let ds = new DuolingoSkill();
         ds.startf();
       }
@@ -346,7 +346,7 @@ const set_hotkeys = () => {
       if (e.key === "s" && e.altKey) {
         document.querySelector("[data-test='player-skip']")?.click();
       }
-      if (e.key === "d" && e.ctrlKey && e.shiftKey) {
+      if (e.key === "d" && e.shiftKey) {
         let ds = new DuolingoSkill();
         ds.startf();
       }
@@ -365,7 +365,7 @@ const set_hotkeys = () => {
       if (e.key === "s" && e.altKey) {
         document.querySelector("[data-test='player-skip']")?.click();
       }
-      if (e.key === "d" && e.ctrlKey && e.shiftKey) {
+      if (e.key === "a" && e.shiftKey) {
         let ds = new DuolingoSkill();
         ds.startf();
       }
