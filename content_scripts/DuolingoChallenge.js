@@ -52,11 +52,12 @@ export default class DuolingoChallenge extends ReactUtils {
       case "translate":
         this.solve_translate();
         break;
+      case "readComprehension":
+      case "gapFill":
+      case "select":
+      case "characterSelect":
       case "assist":
       case "form":
-        this.solve_form();
-        break;
-      case "characterSelect":
         this.solve_form();
         break;
       case "judge":
@@ -67,9 +68,6 @@ export default class DuolingoChallenge extends ReactUtils {
         break;
       case "characterIntro":
         this.solve_select_transcription();
-        break;
-      case "select":
-        this.solve_form();
         break;
       case "selectPronunciation":
         this.solve_select_transcription();
@@ -83,9 +81,6 @@ export default class DuolingoChallenge extends ReactUtils {
         break;
       case "name":
         this.solve_name();
-        break;
-      case "gapFill":
-        this.solve_form();
         break;
       case "tapCompleteTable":
         this.solve_tap_complete_table();
@@ -104,9 +99,6 @@ export default class DuolingoChallenge extends ReactUtils {
         break;
       case "tapComplete":
         this.solve_tap_compelete();
-        break;
-      case "readComprehension":
-        this.solve_form();
         break;
       case "listenComprehension":
         this.solve_select_transcription();
