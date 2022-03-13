@@ -97,6 +97,7 @@ const inject_autolingo = () => {
       const legendary_img_url = `${the_extension_id}/images/legendary.svg`;
 
       // iterate over all skills
+      let practice_node = document.querySelector("[data-test='global-practice']")
       let all_skill_nodes = document.querySelectorAll("[data-test='skill']");
       console.logger("Skill Nodes:", all_skill_nodes);
       all_skill_nodes.forEach((skill_node) => {
@@ -180,29 +181,31 @@ const inject_autolingo = () => {
           skill_node.appendChild(autolingo_skill_container);
 
           // key elm
-          let key_autolingo_skill_tooltip = document.createElement("DIV");
-          key_autolingo_skill_tooltip.className = "tooltip";
-          let key_autolingo_skill = document.createElement("IMG");
-          key_autolingo_skill.src = lock_img_url;
-          key_autolingo_skill.className = "key-autolingo-skill";
-
-          // on click, start the lesson and let the extension know it's time to autocomplete
-          key_autolingo_skill.onclick = () => {
-            let ds = new DuolingoSkill(skill_node);
-            ds.start("[data-test='test-out-button']", false);
-          };
-
-          // show tooltip when hovering over the auto-lesson buttons
-          let key_autolingo_tooltip_text = document.createElement("SPAN");
-          key_autolingo_tooltip_text.innerHTML =
-            "Autocomplete <strong>jump lesson</strong> with Autolingo.";
-          key_autolingo_tooltip_text.className = "tooltip-text";
-
-          // append nodes to eachother
-          key_autolingo_skill_tooltip.appendChild(key_autolingo_tooltip_text);
-          key_autolingo_skill_tooltip.appendChild(key_autolingo_skill);
-          autolingo_skill_container.appendChild(key_autolingo_skill_tooltip);
-          //          skill_node.appendChild(autolingo_skill_container);
+          if (legendary_level_unlocked == false) {
+            let key_autolingo_skill_tooltip = document.createElement("DIV");
+            key_autolingo_skill_tooltip.className = "tooltip";
+            let key_autolingo_skill = document.createElement("IMG");
+            key_autolingo_skill.src = lock_img_url;
+            key_autolingo_skill.className = "key-autolingo-skill";
+  
+            // on click, start the lesson and let the extension know it's time to autocomplete
+            key_autolingo_skill.onclick = () => {
+              let ds = new DuolingoSkill(skill_node);
+              ds.start("[data-test='test-out-button']", false);
+            };
+  
+            // show tooltip when hovering over the auto-lesson buttons
+            let key_autolingo_tooltip_text = document.createElement("SPAN");
+            key_autolingo_tooltip_text.innerHTML =
+              "Autocomplete <strong>jump lesson</strong> with Autolingo.";
+            key_autolingo_tooltip_text.className = "tooltip-text";
+  
+            // append nodes to eachother
+            key_autolingo_skill_tooltip.appendChild(key_autolingo_tooltip_text);
+            key_autolingo_skill_tooltip.appendChild(key_autolingo_skill);
+            autolingo_skill_container.appendChild(key_autolingo_skill_tooltip);
+            //          skill_node.appendChild(autolingo_skill_container); 
+          }
         }
       });
 
