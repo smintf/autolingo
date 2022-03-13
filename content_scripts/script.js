@@ -116,7 +116,7 @@ const inject_autolingo = () => {
       // show tooltip when hovering over the auto-lesson buttons
       let practice_autolingo_tooltip_text = document.createElement("SPAN");
       practice_autolingo_tooltip_text.innerHTML =
-      "Autocomplete <strong>practice test</strong> with Autolingo.";
+        "Autocomplete <strong>practice test</strong> with Autolingo.";
       practice_autolingo_tooltip_text.className = "tooltip-text";
 
       // append nodes to eachother
