@@ -1,4 +1,4 @@
-.start-autolingo-skill-container {
+.start-autolingo-skill-container, .start-autolingo-practice-container {
     position: absolute;
     right: -10px;
     top: 0px;
@@ -8,19 +8,19 @@
     align-items: center;
 }
 
-.start-autolingo-skill, .final-autolingo-skill, .key-autolingo-skill {
+.start-autolingo-skill, .final-autolingo-skill, .key-autolingo-skill, .autolingo-practice {
     position: relative;
-    height: 40px;
+    height: 38px;
     cursor: pointer;
     transition: .2s;
 }
 
 
-.start-autolingo-skill:hover, .final-autolingo-skill:hover, .key-autolingo-skill:hover {
+.start-autolingo-skill:hover, .final-autolingo-skill:hover, .key-autolingo-skill:hover, .autolingo-practice:hover {
     transform: scale(1.2);
 }
 
-.start-autolingo-skill:active, .final-autolingo-skill:active, .key-autolingo-skill:active {
+.start-autolingo-skill:active, .final-autolingo-skill:active, .key-autolingo-skill:active, .autolingo-practice:active {
     transform: scale(1.3);
 }
 
