@@ -19,7 +19,9 @@ export default class DuolingoSkill extends ReactUtils {
       document
         .querySelector('[class="_3HhhB _2NolF _275sd _1ZefG _1M1mb _26QYy"]')
         ?.click(); // TODO find something more reliable
-      document.querySelector('[class="WOZnx _275sd _1ZefG KJuUV"]')?.click();
+      document.
+        querySelector('[class="WOZnx _275sd _1ZefG KJuUV"]')
+        ?.click();
     }
 
     setTimeout(() => {
@@ -37,9 +39,7 @@ export default class DuolingoSkill extends ReactUtils {
     document
       .querySelector('[class="WOZnx _275sd _1ZefG _2X5BQ _2TXAc"]')
       ?.click();
-    setTimeout(() => {
-      this.state_machine = setInterval(this.complete_challenge, 10);
-    }, 1000);
+    this.startf()
   }
 
   end() {
