@@ -47,6 +47,14 @@ body {
     box-shadow: 1px 1px 4px #75c3c7;
 }
 
+#auto-button {
+    box-shadow: 1px 1px 8px #75c787;
+}
+
+#auto-button:active {
+    box-shadow: 1px 1px 4px #75c787;
+}
+
 div#toggle-enabled-text {
     font-size: 20px;
     border-left: 20px solid transparent;

@@ -68,6 +68,10 @@ const solve_skip_challenge = () => {
   send_event("solve_skip_challenge");
 };
 
+const autocomplete_lesson = () => {
+  send_event("autocomplete_lesson");
+};
+
 const render_content = () => {
   // get content div
   let content_div = document.getElementById("content");
@@ -86,6 +90,9 @@ const render_content = () => {
         <div class="solve-container content-row">
             <button id="solve-button" class="row-button" title="Alt+Enter">Solve</button>
         </div>
+        <div class="auto-container content-row">
+            <button id="auto-button" class="row-button" title="Alt+D">Autocomplete Lesson</button>
+        </div>
     `;
 
   document.getElementById("toggle-enabled-input").onclick =
@@ -94,6 +101,7 @@ const render_content = () => {
 
   document.getElementById("solve-button").onclick = solve_challenge;
   document.getElementById("solve-skip-button").onclick = solve_skip_challenge;
+  document.getElementById("auto-button").onclick = autocomplete_lesson;
 };
 
 document.addEventListener("DOMContentLoaded", () => {

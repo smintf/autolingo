@@ -35,6 +35,9 @@ const injectScript = (fileName) => {
           case "solve_skip_challenge":
             send_custom_event("solve_skip_challenge");
             break;
+          case "autocomplete_lesson":
+            send_custom_event("autocomplete_lesson");
+            break;
           default:
             console.error(`Given unknown message type '${message.action}'`);
         }

@@ -86,6 +86,13 @@ const inject = (extension_id) => {
     challenge.click_next();
     //    challenge.click_next();
   });
+
+  // autocompletes the current lesson
+  // when the user clicks the corresponding button in the popup
+  document.addEventListener("autocomplete_lesson", () => {
+    let autocomplete = new DuolingoSkill();
+    autocomplete.startf();
+  });
 };
 
 const inject_autolingo = () => {
