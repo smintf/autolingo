@@ -91,7 +91,7 @@ const render_content = () => {
             <button id="solve-button" class="row-button" title="Alt+Enter">Solve</button>
         </div>
         <div class="auto-container content-row">
-            <button id="auto-button" class="row-button" title="Alt+D">Autocomplete Lesson</button>
+            <button id="auto-button" class="row-button" title="Alt+D">Autocomplete</button>
         </div>
     `;
 
