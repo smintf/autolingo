@@ -46,7 +46,7 @@ setInterval(() => {
   // if the language changed, we know we just loaded the home page
   if (previous_language !== current_language || previous_url !== current_url) {
     inject_autolingo();
-//    window.location.reload();
+    //    window.location.reload();
     previous_language = current_language;
     previous_url = current_url;
   }
