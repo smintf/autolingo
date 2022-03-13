@@ -96,6 +96,42 @@ const inject_autolingo = () => {
       const tier_img_url = `${the_extension_id}/images/diamond_league.svg`;
       const legendary_img_url = `${the_extension_id}/images/legendary.svg`;
 
+      // iterate over all practice nodes
+      let practice_node = document.querySelector(
+        "[data-test='global-practice']"
+      );
+      let autolingo_practice_container = document.createElement("DIV");
+      autolingo_practice_container.className =
+        "start-autolingo-practice-container";
+      let autolingo_practice_tooltip = document.createElement("DIV");
+      autolingo_practice_tooltip.className = "tooltip";
+      let autolingo_practice = document.createElement("IMG");
+      autolingo_practice.src = tier_img_url;
+      autolingo_practice.className = "autolingo-practice";
+      // on click, final the lesson and let the extension know it's time to autocomplete
+      autolingo_practice.onclick = () => {
+          let ds = new DuolingoSkill(skill_node);
+            ds.start(
+                "[data-test='global-practice']",
+                false
+              );
+            };
+      // show tooltip when hovering over the auto-lesson buttons
+      let practice_autolingo_tooltip_text = document.createElement("SPAN");
+            practice_autolingo_tooltip_text.innerHTML =
+              "Autocomplete <strong>practice test</strong> with Autolingo.";
+            practice_autolingo_tooltip_text.className = "tooltip-text";
+
+            // append nodes to eachother
+            autolingo_practice_tooltip.appendChild(
+              practice_autolingo_tooltip_text
+            );
+            practice_autolingo_skill_tooltip.appendChild(autolingo_practice);
+            autolingo_practice_container.appendChild(
+              autolingo_practice_tooltip
+            );
+
+
       // iterate over all skill nodes
       let all_skill_nodes = document.querySelectorAll("[data-test='skill']");
       console.logger("Skill Nodes:", all_skill_nodes);
