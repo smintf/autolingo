@@ -119,10 +119,14 @@ const inject_autolingo = () => {
         "Autocomplete <strong>practice test</strong> with Autolingo.";
       practice_autolingo_tooltip_text.className = "tooltip-text";
 
-      // append nodes to eachother
-      autolingo_practice_tooltip.appendChild(practice_autolingo_tooltip_text);
-      practice_autolingo_skill_tooltip.appendChild(autolingo_practice);
-      autolingo_practice_container.appendChild(autolingo_practice_tooltip);
+            // append nodes to eachother
+            autolingo_practice_tooltip.appendChild(
+              practice_autolingo_tooltip_text
+            );
+            autolingo_practice_tooltip.appendChild(autolingo_practice);
+            autolingo_practice_container.appendChild(
+              autolingo_practice_tooltip
+            );
 
       // iterate over all skill nodes
       let all_skill_nodes = document.querySelectorAll("[data-test='skill']");
