@@ -123,6 +123,7 @@ const inject_autolingo = () => {
       autolingo_practice_tooltip.appendChild(practice_autolingo_tooltip_text);
       autolingo_practice_tooltip.appendChild(autolingo_practice);
       autolingo_practice_container.appendChild(autolingo_practice_tooltip);
+      practice_node.appendChild(autolingo_practice_container)
 
       // iterate over all skill nodes
       let all_skill_nodes = document.querySelectorAll("[data-test='skill']");
