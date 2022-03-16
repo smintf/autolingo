@@ -100,7 +100,7 @@ const inject_autolingo = () => {
     if (stylesheet_loaded && the_extension_id) {
       clearInterval(i);
 
-      const lock_img_url = `${the_extension_id}/images/locked.svg`;
+      const gold_img_url = `${the_extension_id}/images/gold_league.svg`;
       const tier_img_url = `${the_extension_id}/images/diamond_league.svg`;
       const legendary_img_url = `${the_extension_id}/images/legendary.svg`;
 
@@ -222,7 +222,7 @@ const inject_autolingo = () => {
             let key_autolingo_skill_tooltip = document.createElement("DIV");
             key_autolingo_skill_tooltip.className = "tooltip";
             let key_autolingo_skill = document.createElement("IMG");
-            key_autolingo_skill.src = lock_img_url;
+            key_autolingo_skill.src = gold_img_url;
             key_autolingo_skill.className = "key-autolingo-skill";
 
             // on click, start the lesson and let the extension know it's time to autocomplete
