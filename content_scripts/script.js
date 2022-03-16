@@ -119,7 +119,7 @@ const inject_autolingo = () => {
       // on click, final the lesson and let the extension know it's time to autocomplete
       autolingo_practice.onclick = () => {
         let dp = new DuolingoSkill();
-        dp.startp();
+        dp.startf();
       };
       // show tooltip when hovering over the auto-lesson buttons
       let practice_autolingo_tooltip_text = document.createElement("SPAN");
