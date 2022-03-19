@@ -33,7 +33,7 @@ Autolingo is an extension that completes Duolingo lessons so you don't have to.
 
 1. Download the extension from [here](https://nightly.link/smintf/autolingo/workflows/main/master/AutolingoExtension.zip).
 2. Open the "Manage Extensions" page on your browser and turn on "Developer Mode"
-3. Drag and drop `AutolingoExtension.zip` into the "Manage Extensions" page.
+3. Drag and drop [`AutolingoExtension.zip`](https://nightly.link/smintf/autolingo/workflows/main/master/AutolingoExtension.zip) into the "Manage Extensions" page.
 
 ### How do i Use This?
 
