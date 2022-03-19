@@ -38,8 +38,8 @@ Autolingo is an extension that completes Duolingo lessons so you don't have to.
 ### How do i Use This?
 
 1. Open the Extension and Toggle it.
-2. Click "Solve & Skip" to solve the current question and press continue or "Solve" to solve it but stay on the question so you can see the answer.
-3. You can also click the Diamond on the lesson icons to complete the entire lesson.
+2. Click "Solve & Skip" to solve the current question and press continue, "Solve" to solve it but stay on the question so you can see the answer or "Autocomplete" to autocomplete the entire lesson.
+3. You can also click the Diamond League icon on top of the lessons to autocomplete the entire lesson or the Gold League icon to autocomplete a "Jump to level" lesson.
 
 #### Hotkeys
 
