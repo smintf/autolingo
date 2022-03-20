@@ -42,7 +42,11 @@ jobs:
         
       - name: Remove .github dir
         run: rm -r .github
-        
+      
+      
+      - name: Remove .whitespace file
+        run: rm .whitespace
+      
       
       - uses: actions/upload-artifact@v2
         with:
