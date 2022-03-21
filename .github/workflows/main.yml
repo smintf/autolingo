@@ -44,8 +44,8 @@ jobs:
         run: rm -r .github
       
       
-      - name: Remove .whitespace file
-        run: rm .whitespace
+      - name: Remove .whitesource file
+        run: rm .whitesource
       
       
       - uses: actions/upload-artifact@v2
