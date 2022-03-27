@@ -19,7 +19,7 @@ jobs:
           ref: ${{ github.head_ref }}
           fetch-depth: 0
 
-      - name: Prettify code
+      - name: Prettify Code using Prettier
         uses: creyD/prettier_action@v4.2
         with:
           # This part is also where you can pass other options, for example:
