@@ -27,7 +27,7 @@
 ### What's Autolingo?
 
 Autolingo is an extension that completes Duolingo lessons so you don't have to.
-<br>This currently only supports Chromium-based browsers (Chrome, Brave, Edge)
+<br>This currently only supports Chromium-based browsers (Chrome, Brave, Edge).
 
 ### How to Install?
 
