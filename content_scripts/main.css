@@ -1,81 +1,89 @@
-.start-autolingo-skill-container, .start-autolingo-practice-container {
-    position: absolute;
-    right: -10px;
-    top: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.start-autolingo-skill-container,
+.start-autolingo-practice-container {
+	position: absolute;
+	right: -10px;
+	top: 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-.start-autolingo-skill, .final-autolingo-skill, .key-autolingo-skill, .autolingo-practice {
-    position: relative;
-    height: 38px;
-    cursor: pointer;
-    transition: .2s;
+.start-autolingo-skill,
+.final-autolingo-skill,
+.key-autolingo-skill,
+.autolingo-practice {
+	position: relative;
+	height: 38px;
+	cursor: pointer;
+	transition: 0.2s;
 }
 
-
-.start-autolingo-skill:hover, .final-autolingo-skill:hover, .key-autolingo-skill:hover, .autolingo-practice:hover {
-    transform: scale(1.2);
+.start-autolingo-skill:hover,
+.final-autolingo-skill:hover,
+.key-autolingo-skill:hover,
+.autolingo-practice:hover {
+	transform: scale(1.2);
 }
 
-.start-autolingo-skill:active, .final-autolingo-skill:active, .key-autolingo-skill:active, .autolingo-practice:active {
-    transform: scale(1.3);
+.start-autolingo-skill:active,
+.final-autolingo-skill:active,
+.key-autolingo-skill:active,
+.autolingo-practice:active {
+	transform: scale(1.3);
 }
-
 
 /* Tooltip container */
 .tooltip {
-    position: relative;
-    display: inline-block;
-  }
-  
+	position: relative;
+	display: inline-block;
+}
+
 /* Tooltip text */
 .tooltip .tooltip-text {
-    z-index: 1002 !important;
-    visibility: hidden;
-    width: 160px;
-    background-color: #000000;
-    color: #ffffff;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
-    left: 50px;
-    top: -5px;
-    /* Position the tooltip text - see examples below! */
-    position: absolute;
-    z-index: 1;
-    /* don't let hovering over the text keep the text open! */
-    pointer-events: none;
+	z-index: 1002 !important;
+	visibility: hidden;
+	width: 160px;
+	background-color: #000000;
+	color: #ffffff;
+	text-align: center;
+	padding: 5px 0;
+	border-radius: 6px;
+	left: 50px;
+	top: -5px;
+	/* Position the tooltip text - see examples below! */
+	position: absolute;
+	z-index: 1;
+	/* don't let hovering over the text keep the text open! */
+	pointer-events: none;
 }
 
 /* Tooltip container */
 .tooltip-p {
-    position: relative;
-    display: inline-block;
-  }
-  
+	position: relative;
+	display: inline-block;
+}
+
 /* Tooltip text */
 .tooltip-p .tooltip-text {
-    z-index: 1002 !important;
-    visibility: hidden;
-    width: 160px;
-    background-color: #00000000;
-    color: #ffffff00;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
-    left: 50px;
-    top: -5px;
-    /* Position the tooltip text - see examples below! */
-    position: absolute;
-    z-index: 1;
-    /* don't let hovering over the text keep the text open! */
-    pointer-events: none;
+	z-index: 1002 !important;
+	visibility: hidden;
+	width: 160px;
+	background-color: #00000000;
+	color: #ffffff00;
+	text-align: center;
+	padding: 5px 0;
+	border-radius: 6px;
+	left: 50px;
+	top: -5px;
+	/* Position the tooltip text - see examples below! */
+	position: absolute;
+	z-index: 1;
+	/* don't let hovering over the text keep the text open! */
+	pointer-events: none;
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltip-text {
-    visibility: visible;
+	visibility: visible;
 }

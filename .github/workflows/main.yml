@@ -2,9 +2,9 @@ name: nightly.link
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
   pull_request:
-    branches: [ master ]
+    branches: [master]
 
   workflow_dispatch:
 
@@ -30,18 +30,15 @@ jobs:
       - name: Remove README file
         run: rm README.md
 
-
       - name: Remove TODO file
         run: rm TODO.md
-        
-        
+
       - name: Remove .git dir
         run: rm -r .git
-        
-        
+
       - name: Remove .github dir
         run: rm -r .github
-            
+
       - uses: actions/upload-artifact@v2
         with:
           name: AutolingoExtension
