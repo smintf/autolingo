@@ -19,9 +19,9 @@
       <img src="https://img.shields.io/github/workflow/status/smintf/autolingo/nightly.link/master">
   </a>
   <a>
-  <a href="https://chrome.google.com/webstore/detail/autolingo/jppnahnlneednhaefhbfgpamgbecpfdd">
+<!--  <a href="https://chrome.google.com/webstore/detail/autolingo/jppnahnlneednhaefhbfgpamgbecpfdd">
       <img src="https://img.shields.io/chrome-web-store/v/jppnahnlneednhaefhbfgpamgbecpfdd?color=%237B68EE&label=version">
-  </a>
+  </a> --->
   <a href="https://opensource.org/">
       <img src="https://img.shields.io/badge/Open%20Source-true-brightgreen">
   </a>
