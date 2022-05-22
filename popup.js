@@ -47,6 +47,26 @@ const reload_all_duolingo_tabs = () => {
   );
 };
 
+const resize_duolingo_tab = () => {
+  chrome.windows.getAll(
+    {
+      populate: true,
+      windowTypes: ["normal", "panel", "popup"],
+    },
+    (windows) => {
+      windows.forEach((window) => {
+        window.tabs.forEach((tab) => {
+          if (tab.url.includes("https://www.duolingo.com")) {
+            chrome.tabs.reload(tab.id);
+            chrome.tabs.Tab.height = 500
+            chrome.tabs.Tab.width = 500
+          }
+        });
+      });
+    }
+  );
+};
+
 const toggle_extension_enabled = () => {
   enabled = !enabled;
   chrome.storage.local.set({ autolingo_enabled: enabled });
