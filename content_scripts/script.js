@@ -2,7 +2,7 @@ import ReactUtils from "./ReactUtils.js";
 import DuolingoSkill from "./DuolingoSkill.js";
 import DuolingoChallenge from "./DuolingoChallenge.js";
 
-const DEBUG = true;
+const DEBUG = false;
 
 // append an iframe so we can re-enable console.log
 // using its console.logger
