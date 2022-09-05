@@ -27,10 +27,13 @@
   </a>
 </p>
 
-### What's Autolingo?
+### What's Autolingo_mod?
 
-Autolingo is an extension that completes Duolingo lessons so you don't have to.
+Autolingo is a modification on the original Autolingo extension that completes Duolingo lessons so you don't have to.
 <br>This currently only supports Chromium-based browsers (Chrome, Brave, Edge).
+### What's different in Autolingo_mod?
+
+Autolingo_mod simply does the same functiom as Autolingo but returns solutions without Punctuations and Capitolization.
 
 ### How to Install?
 
