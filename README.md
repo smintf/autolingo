@@ -33,7 +33,7 @@ Autolingo is a modification on the original Autolingo extension that completes D
 <br>This currently only supports Chromium-based browsers (Chrome, Brave, Edge).
 ### What's different in Autolingo_mod?
 
-Autolingo_mod simply does the same functiom as Autolingo but returns solutions without Punctuations and Capitolization.
+Autolingo_mod simply does the same function as Autolingo but returns solutions without Punctuations and Capitolization.
 
 ### How to Install?
 
