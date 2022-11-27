@@ -116,7 +116,7 @@ export default class DuolingoChallenge extends ReactUtils {
         break;
       default:
         const error_string = `AUTOLINGO - UNKNOWN CHALLENGE TYPE: ${this.challenge_type}`;
-        alert(error_string);
+        // alert(error_string);
         throw new Error(error_string);
     }
   };
