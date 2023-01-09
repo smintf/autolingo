@@ -1,35 +1,46 @@
 {
-	"action": {
-		"default_popup": "popup.html",
-		"default_title": "Autolingo"
-	},
-	"background": {
-		"service_worker": "background.js"
-	},
-	"content_scripts": [
-		{
-			"all_frames": true,
-			"js": ["content_scripts/init.js"],
-			"matches": ["*://*.duolingo.com/*"]
-		}
-	],
-	"description": "Automatically completes Duolingo lessons so you don't have to!",
-	"icons": {
-		"16": "images/icon-16.png",
-		"32": "images/icon-32.png",
-		"48": "images/icon-48.png",
-		"60": "images/icon-60.png",
-		"128": "images/icon-128.png",
-		"256": "images/icon-256.png"
-	},
-	"manifest_version": 3,
-	"name": "Autolingo",
-	"permissions": ["tabs", "storage"],
-	"version": "2022.03.07",
-	"web_accessible_resources": [
-		{
-			"matches": ["<all_urls>"],
-			"resources": ["*"]
-		}
-	]
+    "manifest_version": 3,
+    "version": "2023.01.03",
+    "name": "Autolingo",
+    "description": "Automatically completes Duolingo lessons so you don't have to!",
+    "permissions": [
+        "tabs",
+        "storage"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup/popup.html",
+        "default_title": "Autolingo"
+    },
+    "content_scripts": [
+        {
+            "all_frames": true,
+            "js": [
+                "content_scripts/init.js"
+            ],
+            "matches": [
+                "*://*.duolingo.com/*"
+            ]
+        }
+    ],
+    "icons": {
+        "16": "images/icon-16.png",
+        "32": "images/icon-32.png",
+        "48": "images/icon-48.png",
+        "60": "images/icon-60.png",
+        "128": "images/icon-128.png",
+        "256": "images/icon-256.png"
+    },
+    "web_accessible_resources": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "resources": [
+                "*"
+            ]
+        }
+    ]
 }
