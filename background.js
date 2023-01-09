@@ -1,3 +1,8 @@
+function handleInstall() {
+    console.log("The extension has been installed.");
+    chrome.storage.local.set({ autolingo_enabled: false });
+}
+
 function handleStorage(changes, namespace) {
     if (!changes["autolingo_enabled"]) return false;
 
@@ -6,4 +11,5 @@ function handleStorage(changes, namespace) {
     chrome.action.setBadgeBackgroundColor({ color: isEnabled ? "#008000" : "#EC5053" });
 }
 
-chrome.storage.onChanged.addListener(handleStorage)
+chrome.storage.onChanged.addListener(handleStorage);
+chrome.runtime.onInstalled.addListener(handleInstall);
