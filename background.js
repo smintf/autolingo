@@ -1,6 +1,6 @@
 function handleInstall() {
     console.log("The extension has been installed.");
-    chrome.storage.local.set({ autolingo_enabled: false });
+    chrome.storage.local.set({ autolingo_enabled: true });
 }
 
 function handleStorage(changes, namespace) {
