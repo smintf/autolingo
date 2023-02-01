@@ -1,7 +1,7 @@
 import ReactUtils from "./ReactUtils.js";
 
 export default class DuolingoChallenge extends ReactUtils {
-  constructor() {
+  constructor () {
     super();
 
     // get the react internals for the current lesson
@@ -38,10 +38,9 @@ export default class DuolingoChallenge extends ReactUtils {
   }
 
   get_challenge_internals = () => {
-    const challenge_elem = this.ReactFiber(document.querySelector(".mQ0GW"));
-    if (challenge_elem) {
-      return challenge_elem.return.return.stateNode.props;
-    }
+    let thisPrefixName = Object.keys(document.querySelector(".mQ0GW")).find((e) => e.includes("__reactFiber$"));
+    let challenge_elements = document.querySelector(".mQ0GW")[thisPrefixName];
+    return challenge_elements.return.return.stateNode.props;
   };
 
   solve = () => {
