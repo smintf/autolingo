@@ -300,14 +300,22 @@ export default class DuolingoChallenge extends ReactUtils {
     let pairs = this.challenge_node.pairs;
 
     // get the nodes for all the options
-    let tap_token_nodes = document.querySelectorAll(
-      "[data-test='challenge-tap-token']"
-    );
+    let tap_token_nodes = document.querySelectorAll("[data-test='challenge-tap-token']");
 
     // build a map from the text content to the node
     let tap_tokens = {};
     Array.from(tap_token_nodes).forEach((tap_token_node) => {
-      let content = tap_token_node.childNodes[0].textContent;
+      let contentTagElement = tap_token_node.childNodes[1];
+      let content;
+
+      // This is a roundabout for japanese course.
+      if (contentTagElement.tagName == "RUBY") {
+        let rb_values = contentTagElement.getElementsByTagName("rb");
+        content = Array.from(rb_values).map((e) => e.textContent).join("");
+      } else {
+        content = contentTagElement.textContent;
+      }
+
       tap_tokens[content] = tap_token_node;
     });
 
