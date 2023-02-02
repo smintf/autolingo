@@ -1,45 +1,29 @@
-name: nightly.link
+name: Build new version
 
 on:
-  push:
-    branches: [master]
-  pull_request:
-    branches: [master]
-
-  workflow_dispatch:
+    push:
+        branches: [master]
+    pull_request:
+        branches: [master]
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+    build-extension:
+        runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          ref: ${{ github.head_ref }}
-          fetch-depth: 0
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v3
+              with:
+                  ref: ${{ github.head_ref }}
+                  fetch-depth: 0
 
-      - name: Prettify Code using Prettier
-        uses: creyD/prettier_action@v4.2
-        with:
-          prettier_options: --write **/*.{js,md}
-          only_changed: True
+            - name: Remove extra files
+              run: rm README.md TODO.md
 
-      - uses: actions/checkout@v2
+            - name: Remove especific git folders
+              run: rm -rf .git .github
 
-      - name: Remove README file
-        run: rm README.md
-
-      - name: Remove TODO file
-        run: rm TODO.md
-
-      - name: Remove .git dir
-        run: rm -r .git
-
-      - name: Remove .github dir
-        run: rm -r .github
-
-      - uses: actions/upload-artifact@v2
-        with:
-          name: AutolingoExtension
-          path: .
+            - uses: actions/upload-artifact@v2
+              with:
+                  name: AutolingoExtension
+                  path: .
