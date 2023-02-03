@@ -19,11 +19,11 @@ jobs:
               run: rm -rf README.md TODO.md LICENSE .git .github
 
             - name: Create extension's zip files
-              run: zip autolingo-extension-zip *
+              run: zip -r autolingo-extension-zip .
 
             - name: Get actual date for version name.
               id: actual-date
-              run: echo "DATE=$(date +'%d.%m.%y')" >> $GITHUB_ENV
+              run: echo "DATE=$(date +'%d.%m.%y')" >> $GITHUB_OUTPUT
 
             - name: Create release
               id: create-release
