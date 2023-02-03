@@ -18,12 +18,15 @@ jobs:
             - name: Remove extra files and especific git folders
               run: rm -rf README.md TODO.md LICENSE .git .github
 
-            - name: Create extension's zip files
-              run: zip -r autolingo-extension-zip .
-
             - name: Get actual date for version name.
               id: actual-date
-              run: echo "DATE=$(date +'%d.%m.%y')" >> $GITHUB_OUTPUT
+              run: echo "DATE=$(date +'%Y.%m.%d')" >> $GITHUB_OUTPUT
+
+            - name: Replace version name in manifest.json
+              run: sed -i 's/12345/$${{ steps.actual-date.outputs.DATE }}/g' manifest.json
+
+            - name: Create extension's zip files
+              run: zip -r autolingo-extension-zip .
 
             - name: Create release
               id: create-release
