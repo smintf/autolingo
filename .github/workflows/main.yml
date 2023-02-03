@@ -5,6 +5,7 @@ on:
         branches: [development]
     pull_request:
         branches: [master]
+    workflow_dispatch:
 
 jobs:
     build-extension:
@@ -14,23 +15,20 @@ jobs:
             - name: Checkout
               uses: actions/checkout@v3
 
-            - name: Remove extra files
-              run: rm README.md TODO.md LICENSE
-
-            - name: Remove especific git folders
-              run: rm -rf .git .github
+            - name: Remove extra files and especific git folders
+              run: rm -rf README.md TODO.md LICENSE .git .github
 
             - name: Create extension's zip files
-              run: zip autolingo-extension-zip ./*
+              run: zip autolingo-extension-zip *
 
             - name: Create release
               id: create-release
               uses: actions/create-release@v1
               env:
-                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
               with:
                   tag_name: release
-                  release_name: Release ${{ github.ref }}
+                  release_name: Version ${{ date +"%d.%m.%y" }}
                   draft: true
                   prerelease: false
 
