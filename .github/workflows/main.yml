@@ -21,6 +21,10 @@ jobs:
             - name: Create extension's zip files
               run: zip autolingo-extension-zip *
 
+            - name: Get actual date for version name.
+              id: actual-date
+              run: echo "DATE=$(date +'%d.%m.%y')" >> $GITHUB_ENV
+
             - name: Create release
               id: create-release
               uses: actions/create-release@v1
@@ -28,9 +32,10 @@ jobs:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
               with:
                   tag_name: release
-                  release_name: Version ${{ date +"%d.%m.%y" }}
+                  release_name: Version ${{ steps.actual-date.outputs.DATE }}
                   draft: true
                   prerelease: false
+                  owner: ${{ github.actor }}
 
             - name: Upload assets for release
               uses: actions/upload-release-asset@v1
