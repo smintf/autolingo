@@ -18,26 +18,33 @@ jobs:
                   fetch-depth: 0
 
             - name: Remove extra files
-              run: rm README.md TODO.md
+              run: rm README.md TODO.md LICENSE
 
             - name: Remove especific git folders
               run: rm -rf .git .github
 
-            - uses: actions/upload-artifact@v2
+            - name: Upload artifact
+              uses: actions/upload-artifact@v2
               with:
                   name: AutolingoExtension
                   path: .
 
             - name: Create release
+              id: create-release
               uses: actions/create-release@v1
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
               with:
                   tag_name: ${{ github.ref }}
                   release_name: Release ${{ github.ref }}
-                  body: |
-                      Changes in this Release
-                      - First Change
-                      - Second Change
                   draft: true
                   prerelease: false
+
+            - name: Upload assets for release
+              uses: actions/upload-release-asset@v1
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              with:
+                  upload_url: ${{ steps.create_release.outputs.upload_url }}
+                  asset_path: ./AutolingoExtension.zip
+                  asset_name: Autolingo.zip
