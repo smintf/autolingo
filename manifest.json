@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "version": "2023.01.03",
+    "version": "12345",
     "name": "Autolingo",
     "description": "Automatically completes Duolingo lessons so you don't have to!",
     "permissions": [
